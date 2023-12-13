@@ -26,6 +26,7 @@ fetch('./data.json')
       const itemIcon = document.createElement('img');
       itemIcon.classList.add('item__icon');
       itemIcon.setAttribute('src', `assets/images/icon-${item.category}.svg`);
+      itemIcon.setAttribute('alt', '');
 
       const itemTitle = document.createElement('h3');
       itemTitle.classList.add(
