@@ -5,32 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
     <title>Frontend Mentor | Results summary component</title>
   </head>
-  <body>
-    <div>Your Result 76 of 100</div>
-
-    <div>
-      Great You scored higher than 65% of the people who have taken these tests.
+  <body class="bg-pale-blue flex items-center justify-center">
+    <div
+      class="card flex flex-col md:flex-row items-center justify-center bg-white md:rounded-4xl md:mt-12 md:w-[736px] shadow-2xl shadow-cobalt-blue/30"
+    >
+      <div
+        class="card__results bg-gradient-to-b from-light-slate-blue to-light-royal-blue flex flex-col items-center justify-center pt-6 gap-4 text-center pb-10 px-6 rounded-b-4xl md:rounded-4xl md:px-14"
+      >
+        <h2
+          class="card__header text-light-lavender md:text-2xl md:pt-3 md:pb-4"
+        >
+          Your Result
+        </h2>
+        <div
+          class="card__circle flex flex-col items-center justify-center rounded-full h-[140px] w-[140px] md:h-[200px] md:w-[200px] bg-gradient-to-b from-violet-blue/80 from-35% to-light-royal-blue/20 md:mb-3"
+        >
+          <h1
+            class="circle__header text-5xl md:text-[72px] text-white font-semibold pt-1 md:pt-3"
+          >
+            76
+          </h1>
+          <p class="circle__body text-light-lavender/50 md:text-lg">of 100</p>
+        </div>
+        <div class="card__description">
+          <h2
+            class="description__header text-white text-2xl pb-2 md:text-[32px] md:pb-4"
+          >
+            Great
+          </h2>
+          <p
+            class="description__body max-w-xs px-7 text-light-lavender md:px-1 md:max-w-md md:text-lg md:pb-4"
+          >
+            Your performance exceed 65% of the people conducting the test here!
+          </p>
+        </div>
+      </div>
+      <div
+        class="summary__wrapper flex flex-col items-center gap-4 justify-between"
+      >
+        <div
+          class="card__summary flex flex-col bg-white gap-4 py-6 px-8 w-full md:rounded-4xl justify-start md:pt-9"
+        >
+          <h2 class="summary__title text-lg md:text-2xl md:pb-3">Summary</h2>
+        </div>
+        <div class="btn__wrapper px-8 pb-6 md:pb-10">
+          <button
+            class="card__btn bg-dark-gray-blue hover:bg-gradient-to-b hover:from-light-slate-blue hover:to-light-royal-blue text-white py-3 px-[107px] rounded-full"
+          >
+            <p class="btn__text text-lg">Continue</p>
+          </button>
+        </div>
+      </div>
     </div>
-
-    <div>Summary</div>
-
-    <div>Reaction 80 / 100</div>
-
-    <div>Memory 92 / 100</div>
-
-    <div>Verbal 61 / 100</div>
-
-    <div>Visual 72 / 100</div>
-
-    <div>Continue</div>
   </body>
 </html>
